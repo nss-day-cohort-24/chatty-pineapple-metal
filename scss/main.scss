@@ -41,3 +41,20 @@ p .bold {
     font-weight: bold;
 }
 
+button{
+    background: #7acdcf;
+    border-radius: 60px;
+    font-family: $primaryFont;
+    color: #ffffff;
+    font-size: 16px;
+    background: #7acdcf;
+    padding: 4px 30px 4px 30px;
+    border:none;
+
+}
+
+button:hover {
+    background: #ffffff;
+    color:#7acdcf;
+    border:2px solid #7acdcf
+  }
