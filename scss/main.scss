@@ -44,7 +44,7 @@ p .bold {
 button{
     background: #7acdcf;
     border-radius: 60px;
-    font-family: $primaryFont;
+    font-family: $secondaryFont;
     color: #ffffff;
     font-size: 16px;
     background: #7acdcf;
@@ -54,6 +54,7 @@ button{
 }
 
 button:hover {
+    font-size: 16px;
     background: #ffffff;
     color:#7acdcf;
     border:2px solid #7acdcf
