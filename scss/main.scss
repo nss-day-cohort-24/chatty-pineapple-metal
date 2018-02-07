@@ -6,6 +6,26 @@ $white: #efeee9;
 $grey: #aaa;
 $black: #1b1d28;
 
+body{
+    background-color:#7acdcf
+}
+
+#logo{
+    margin-top:-100px;
+    display:inline-block;
+}
+
+form{
+    display:inline-block;
+    width:70%;
+    text-align:right;
+    margin-top:50px;
+    color:white;
+
+}
+
+
+
 h1 {
     font-family: $primaryFont;
     font-size: 70px;
@@ -39,24 +59,55 @@ p .bold {
     font-family: $secondaryFont;
     font-size: 19px;
     font-weight: bold;
+
+}
+
+header{
+    background-color:#2c314f;
+}
+
+.container{
+    margin-left:10%;
+    margin-right:10%;
+    background-color:white;
 }
 
 button{
-    background: #7acdcf;
+    background: #2c314f;
     border-radius: 60px;
     font-family: $secondaryFont;
     color: #ffffff;
     font-size: 16px;
-    background: #7acdcf;
     padding: 4px 30px 4px 30px;
     margin:5px;
     border:none;
+    display:inline-block;
 
 }
 
 button:hover {
     font-size: 16px;
     background: #ffffff;
+    color:#2c314f;
+    border:2px solid #2c314f
+  }
+
+#user-submit{
+    background: #7acdcf;
+    border-radius: 60px;
+    font-family: $secondaryFont;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 4px 30px 4px 30px;
+    margin:5px;
+    border:none;
+    display:inline-block;
+}
+
+#user-submit:hover{
+    font-size: 16px;
+    background: #ffffff;
     color:#7acdcf;
     border:2px solid #7acdcf
-  }
+}
+
