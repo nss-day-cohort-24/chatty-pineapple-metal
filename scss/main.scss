@@ -1,37 +1,43 @@
-$primary: 'Montserrat', sans-serif;
-$secondary:'Lato', sans-serif;
+$primaryFont: 'Montserrat', sans-serif;
+$secondaryFont:'Lato', sans-serif;
+$blue: #2c314f;
+$teal: #7acdcf;
+$white: #efeee9;
+$grey: #aaa;
+$black: #1b1d28;
 
 h1 {
-    font-family: $primary;
+    font-family: $primaryFont;
     font-size: 70px;
 }
 
 h2 {
-    font-family: $primary;
+    font-family: $primaryFont;
     font-size: 55px;
 }
 
 h3 {
-    font-family: $primary;
+    font-family: $primaryFont;
     font-size: 40px;
 }
 h4 {
-    font-family: $primary;
+    font-family: $primaryFont;
     font-size: 24px;
 }
 
 p li {
-font-family: $secondary;
+font-family: $secondaryFont;
 font-size: 17px;
 }
 
 p {
-    font-family: $secondary;
+    font-family: $secondaryFont;
     font-size: 19px;
 }
 
 p .bold {
-    font-family: $secondary;
+    font-family: $secondaryFont;
     font-size: 19px;
     font-weight: bold;
 }
+
