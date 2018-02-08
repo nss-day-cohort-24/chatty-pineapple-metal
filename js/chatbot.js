@@ -23,7 +23,7 @@ let dataRequestComplete = (event) => {
 
 let showData = (jsonObj) => {
 
-    console.log('inside showData function:', data);
+    console.log('inside showData function:', jsonObj);
 
     let chatbox = document.getElementById('chatbox');
 
@@ -31,14 +31,16 @@ let showData = (jsonObj) => {
         let message = '';
         let chatBot = jsonObj[key];
         message += '<div class="msg">';
+            // console.log(message);  
         message += '<div class="msg-text"><p>' + chatBot.botMessage + '</p></div>';
+            // console.log(message);
         message += '<button class="delete">X</button>';
+            // console.log(message);
         message += '</div>';
-
-        console.log(message);
+            console.log(message);
 
         chatbox.innerHTML += message;
-
+            console.log(chatbox.innerHTML);
     }
 
 };
