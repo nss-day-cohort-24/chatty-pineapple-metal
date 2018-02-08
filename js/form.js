@@ -9,11 +9,14 @@ let messageSubmit = function(event){
     event.preventDefault();
     console.log("form js is here");
     // place the subbmitted message in array
-    let messageArray = formMessagesJS.messages.unshift(`<div><p>${inputMessage.innerHTML}</p></div>`);
+    console.log("message array", formMessagesJS.messages);
     
-    // display array in the dom
-    chatbox.innerHTML += messageArray;
-    
+    let messageArray = formMessagesJS.messages.unshift(inputMessage.innerHTML.value);
+
+    console.log("message array", formMessagesJS.messages);
+
+        // display array in the dom
+        chatbox.innerHTML += messageArray.value;
     
     // clearing input field
     inputMessage.innerHTML = "";

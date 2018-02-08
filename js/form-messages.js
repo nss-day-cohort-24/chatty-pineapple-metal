@@ -1,5 +1,5 @@
 "use strict";
 
-var messages = [];
+var messages = ["things", "stuff"];
 
 module.exports = {messages};
