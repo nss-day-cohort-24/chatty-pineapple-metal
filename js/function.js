@@ -5,10 +5,11 @@ let output = document.getElementById("message-contain");
 
 // on enter keypress
 let enter = function(event) {
-    console.log("function js is here");
-    if (event.keyCode === 13) {
-        event.preventDefault();
+    console.log("Heeeeeey.");
+    if (event.keycode === 13) {
+        console.log("function js - enter is here");
         formJS.messageSubmit();
+        console.log("sjdhgfsdf");
     }
 };
 

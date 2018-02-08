@@ -9,19 +9,14 @@ let formJS = require("./form");
 
 // formJS.messageSubmit();
 // funcJS.enter();
+// funcJS.clear();
 
 // enter press function
-document.getElementById("input").addEventListener("keypress", function(){
-    funcJS.enter();
-});
+document.getElementById("input").addEventListener("keypress", funcJS.enter);
 // on click function
-document.getElementById("user-submit").addEventListener("click", function(){
-    formJS.messageSubmit();
-});
+document.getElementById("user-submit").addEventListener("click", formJS.messageSubmit);
 // on click clear
-document.getElementById("clear").addEventListener("click", function(){
-    funcJS.clear();
-});
+document.getElementById("clear").addEventListener("click", funcJS.clear);
 
 
 
