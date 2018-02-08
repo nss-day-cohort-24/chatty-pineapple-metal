@@ -1,9 +1,17 @@
-[
-    {
-        "welcome" : "Welcome to the NSS CHATBOX.",
-        "purpose" : "Here you can safely share your frustrations, find support, and provide advice for getting through NSS in one piece.",
-        "instructions" : "The text box at the top of the page is where you can submit your thoughts. Then press ENTER and it will be submitted to the chatbox.",
-        "frustration" : "Are you SUPER frustrated? Feel free to use the buttons on the right side of the page to throw things or set fire to the chatbox (not literally, but it's the best we could do).",
-        "action" : "Now it's your turn. Try chatting with others!"
-    }
-]
+    [
+        {
+        "botMessage" : "Welcome to the NSS CHATBOX."
+        },
+        {
+        "botMessage" : "Here you can safely share your frustrations, find support, and provide advice for getting through NSS in one piece."
+        },
+        {
+        "botMessage" : "The text box at the top of the page is where you can submit your thoughts. Then press ENTER and it will be submitted to the chatbox."
+        },
+        {
+        "botMessage" : "Are you SUPER frustrated? Feel free to use the buttons on the right side of the page to throw things or set fire to the chatbox (not literally, but it's the best we could do)."
+        },
+        {
+        "botMessage" : "Now it's your turn. Try chatting with others!"
+        }
+    ]

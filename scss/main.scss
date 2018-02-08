@@ -1,5 +1,5 @@
 @import "_dark";
-
+@import "_large";
 $primaryFont: 'Montserrat', sans-serif;
 $secondaryFont:'Lato', sans-serif;
 $blue: #2c314f;
@@ -47,7 +47,7 @@ form{
 }
 
 .chex input:checked ~ .checkmark {
-    background-color: #2196F3;
+    background-color: #7acdcf;
 }
 
 .chex input:checked ~ .checkmark:after {
@@ -165,10 +165,39 @@ header{
 
     position:absolute;
     z-index:1;
-    display:inline;
+    display:inline-block;
     border-radius:50px;
     font-family: $secondaryFont;
     
+}
+
+.msg-text{
+    float:left;
+    margin-left:10px;
+    padding-top:10px;
+
+}
+
+.msg-text p{
+    font-size:16px;
+    font-family: $secondaryFont;
+}
+.delete{
+    font-size:6px;
+    display:inline-block;
+    float:right;
+    margin-top:15px;
+    margin-right:7px;
+    border:1px solid #2c314f;
+    width:10px;
+    padding:2px 12px 2px 7px;
+    text-align:center;
+
+}
+
+.delete:hover{
+    border:1px solid #2c314f;
+    font-size:6px;
 }
 button{
     background: #2c314f;
