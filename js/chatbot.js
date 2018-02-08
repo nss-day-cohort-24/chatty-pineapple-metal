@@ -9,25 +9,61 @@ console.log("chatbox js is loading");
 const messageURL = 'json/chatbot.json';
 
 ////Create a Request
-let request = new XMLHttpRequest();
+let jsonRequest = new XMLHttpRequest();
+
+////Insuring the request is successful
+
+
+let dataRequestComplete = (event) => {
+    console.log("The data transfer is complete, we have the data.");
+    let data = JSON.parse(event.target.responseText);
+    console.log("bot messages:", data);
+    return data;
+};
+
+console.log("data is outside", dataRequestComplete);
+
+function dataRequestFailed(event) {
+    console.log("There was an error");
+}
+
+jsonRequest.addEventListener("load", dataRequestComplete);
+jsonRequest.addEventListener("error", dataRequestFailed);
 
 ////Open a new request
-request.open('GET', messageURL);
+jsonRequest.open('GET', messageURL);
 console.log("Getting data");
 
 ////Set the responseType to JSON so that XHR knowns that the server will be returning JSON and that it should be converted behind the scenes into JS
-request.responseType = 'json';
-console.log("The data is an json array");
+// jsonRequest.responseType = 'json';
+// console.log("The data is an json array");
 
 ////Send the request
-request.send();
+jsonRequest.send();
 console.log("Sent the request");
 
-let botMessages = request.response; // stores the response to our request in a variable
-
-console.log('line 28:', botMessages);
+//Event Listeners for XMLHttpRequest//
 
 
-////Output message to chatbox
-// document.getElementById("messageBox").innerText = testMsg;
+
+console.log('XML Request:', jsonRequest);
+console.log('XML Request response:', jsonRequest.response);
+
+// let botMessages = jsonRequest.response; // stores the response to our request in a variable
+
+
+// //Output message to chatbox//
+
+// let chatbox = document.getElementById("chatbox");
+
+// let newBotMsg = document.createElement('p'); 
+// console.log("created new p element for message");
+
+// newBotMsg.textContent = botMessages.welcome;
+// console.log("set the textContent to botMessages.welcome");
+
+// chatbox.appendChild(newBotMsg);
+// console.log("append the text to the chatbox section");
+
+console.log("chatbot has loaded");
 
