@@ -12,36 +12,40 @@ $black: #1b1d28;
     margin-right:7%;
     background-color:#1b1d28;
     padding-bottom:50px;
-
 }
 
 .darkMsg{
     background-color:#2c314f;
     color:white;
-
-
     margin-left:35px;
     margin-top:75px;
-    // padding-right:400px;
     text-align:center;
     width: 400px;
-
     position:absolute;
     z-index:1;
     display:inline;
     border-radius:50px;
     font-family: $secondaryFont;
-    
-
-
-
-
 }
 
-button{
+.darkButton{
     background: #7acdcf;
     border:2px solid #7acdcf;
     color: black;
+
+
+
+
+    // background: #2c314f;
+    border-radius: 60px;
+    font-family: $secondaryFont;
+    // color: #ffffff;
+    font-size: 16px;
+    padding: 4px 30px 4px 30px;
+    margin:5px;
+    border:none;
+    display:inline-block;
+    // border:2px #2c314f solid;
 }
 
 button:hover{

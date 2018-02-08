@@ -11,30 +11,31 @@ function myFunction() {
     largeCheck.addEventListener('change', changeLargeHandler);
 
 
+
+    
   function changeDarkHandler(){
       if(darkCheck.checked) {
         console.log("DARK");
         let darkTheme = document.getElementById("main-back");
         darkTheme.className = "darkContainer";
 
-
-        let darkMsg = document.getElementsByClassName("msg");
+        let darkMsg = document.getElementById("msgId");
         darkMsg.className = "darkMsg";
 
 
-
-        // darkTheme.classList.toggle("darkContainer");
-
-
-
+        
+        console.log("got tttttthis?");
+          
 
 
       }
       else {
           console.log("dark unchecked");
           let lightTheme = document.getElementById("main-back");
-
           lightTheme.className = "container";
+
+          let darkMsg = document.getElementById("msgId");
+          darkMsg.className = "msg";
 
 
       }
