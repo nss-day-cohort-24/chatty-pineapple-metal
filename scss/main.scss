@@ -7,7 +7,9 @@ $grey: #aaa;
 $black: #1b1d28;
 
 body{
-    background-color:#7acdcf
+    background-color:#7acdcf;
+    padding-bottom:100px;
+
 }
 
 #logo{
@@ -23,7 +25,6 @@ form{
     color:white;
 
 }
-
 
 
 h1 {
@@ -67,11 +68,44 @@ header{
 }
 
 .container{
-    margin-left:10%;
-    margin-right:10%;
+    margin-left:7%;
+    margin-right:7%;
     background-color:white;
+    padding-bottom:50px;
 }
 
+.sidebar > button{
+    text-align:center;
+    width:100%;
+    height:100%;
+}
+
+.message-contain{
+    max-width:100%;
+    position: relative;  
+    padding: 0px 700px 500px 0px;
+    background-color:#aaa;
+    display:inline;
+    text-align:left;
+    border-radius:50px;
+}
+
+
+.msg{
+    margin-left:35px;
+    margin-top:75px;
+    // padding-right:400px;
+    background-color:#7acdcf;
+    text-align:center;
+    width: 400px;
+
+    position:absolute;
+    z-index:1;
+    display:inline;
+    border-radius:50px;
+    font-family: $secondaryFont;
+    
+}
 button{
     background: #2c314f;
     border-radius: 60px;
@@ -111,3 +145,9 @@ button:hover {
     border:2px solid #7acdcf
 }
 
+#clear{
+    position: absolute;
+    bottom: 0;
+    margin-left:100px;
+    margin-bottom:50px;
+}
