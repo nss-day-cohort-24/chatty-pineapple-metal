@@ -19,13 +19,36 @@ let dataRequestComplete = (event) => {
     let data = JSON.parse(event.target.responseText);
     console.log("bot messages:", data);
     return data;
+    showData(data);
 };
 
-console.log("data is outside", dataRequestComplete);
+let showData = (jsonObj) => {
+
+    console.log('inside showData function:', data);
+
+    let chatbox = document.getElementById('chatbox');
+
+    for(key in jsonObj) {
+        let message = '';
+        let chatBot = jsonObj[key];
+        message += '<div class="msg">';
+        message += '<div class="msg-text"><p>' + chatBot.botMessage + '</p></div>';
+        message += '<button class="delete">X</button>';
+        message += '</div>';
+
+        console.log(message);
+
+        chatbox.innerHTML += message;
+
+    }
+
+}
 
 function dataRequestFailed(event) {
     console.log("There was an error");
 }
+
+//Event Listeners for XMLHttpRequest//
 
 jsonRequest.addEventListener("load", dataRequestComplete);
 jsonRequest.addEventListener("error", dataRequestFailed);
@@ -42,12 +65,6 @@ console.log("Getting data");
 jsonRequest.send();
 console.log("Sent the request");
 
-//Event Listeners for XMLHttpRequest//
-
-
-
-console.log('XML Request:', jsonRequest);
-console.log('XML Request response:', jsonRequest.response);
 
 // let botMessages = jsonRequest.response; // stores the response to our request in a variable
 
