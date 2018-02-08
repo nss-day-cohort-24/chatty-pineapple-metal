@@ -1,21 +1,27 @@
 "use strict";
 
-let myVar = require("./function");
+console.log("main js is here");
+
+let funcJS = require("./function");
+let formJS = require("./form");
 
 ////////// dom stuff
 
-// on enter keypress
-function enter(event) {
-    if (event.keyCode === 13) {
-        messageSubmit();
-    } else if (event.keyCode != 13) {
-    }
-}
+formJS.messageSubmit();
+funcJS.enter();
 
-// enter press 
-document.getElementById("input").addEventListener("keypress", enter);
-// on click
-document.getElementById("user-submit").addEventListener("click", message);
+// enter press function
+document.getElementById("input").addEventListener("keypress", function(){
+    funcJS.enter();
+});
+// on click function
+document.getElementById("user-submit").addEventListener("click", function(){
+    formJS.messageSubmit();
+});
+// on click clear
+document.getElementById("clear").addEventListener("click", function(){
+    funcJS.clear();
+});
 
 
 
