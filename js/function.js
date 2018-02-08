@@ -6,6 +6,7 @@ let output = document.getElementById("message-contain");
 // on enter keypress
 let enter = function enter(event) {
     console.log("function js is here");
+    event.preventDefault();
     if (event.keyCode === 13) {
         formJS.messageSubmit();
     } else if (event.keyCode != 13) {

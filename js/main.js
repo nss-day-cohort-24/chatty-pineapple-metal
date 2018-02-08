@@ -7,7 +7,7 @@ let formJS = require("./form");
 
 ////////// dom stuff
 
-formJS.messageSubmit();
+// formJS.messageSubmit();
 funcJS.enter();
 
 // enter press function

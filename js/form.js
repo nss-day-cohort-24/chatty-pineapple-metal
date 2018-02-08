@@ -5,7 +5,6 @@ let inputMessage = document.getElementById("input");
 let output = document.getElementById("message-contain");
 
 let messageSubmit = function messageSubmit(){
-    
     console.log("form js is here");
     // place the subbmitted message in array
     formMessagesJS.messages.unshift(`inputMessage.innerHTML`);
