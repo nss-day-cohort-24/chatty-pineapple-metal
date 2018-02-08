@@ -28,9 +28,8 @@
 
         let chatbox = document.getElementById('chatbox');
 
-        for(var key in jsonObj) {
-            let message = '';
-            let bot = jsonObj[key];
+    
+            let message = "";
             message += '<div class="msg">';
                 // console.log(message);  
             message += '<div class="msg-text"><p>' + bot.botMessage + '</p></div>';
@@ -38,11 +37,11 @@
             message += '<button class="delete">X</button>';
                 // console.log(message);
             message += '</div>';
-                console.log(message);
+                // console.log(message);
 
             chatbox.innerHTML += message;
-                console.log(chatbox.innerHTML);
-        }
+                // console.log(chatbox.innerHTML);
+
 
     };
 
