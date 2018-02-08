@@ -4,13 +4,11 @@ let formJS = require("./form");
 let output = document.getElementById("message-contain");
 
 // on enter keypress
-let enter = function enter(event) {
+let enter = function(event) {
     console.log("function js is here");
-    event.preventDefault();
     if (event.keyCode === 13) {
+        event.preventDefault();
         formJS.messageSubmit();
-    } else if (event.keyCode != 13) {
-        return;
     }
 };
 

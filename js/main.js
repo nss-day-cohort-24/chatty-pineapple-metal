@@ -8,7 +8,7 @@ let formJS = require("./form");
 ////////// dom stuff
 
 // formJS.messageSubmit();
-funcJS.enter();
+// funcJS.enter();
 
 // enter press function
 document.getElementById("input").addEventListener("keypress", function(){

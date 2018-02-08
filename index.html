@@ -18,23 +18,53 @@
         <img src="images/mayhem.png" alt="Mayhem" id="logo" width="300" height="200">
             <form>
                 <input id="input" class="form-control form-control-lg" type="text" placeholder=".This is where the input goeeeessssssssss"><br>
-                <input type="checkbox" name="theme" value="light"> Dark Theme</input>
-                <input type="checkbox" name="theme" value="large"> Large Text</input>
+                <label class="chex">
+                <input type="checkbox" name="theme" value="light" id="checkDark"> Dark Theme</input>
+                <span class="checkmark"></span>
+                </label>
+                <label class="chex">
+                <input type="checkbox" name="theme" value="large" id="checkLarge"> Large Text</input>
+                <span class="checkmark"></span>
+                </label>
+
+
                 <button id="user-submit">Click on me boiiiiii</button>
             </form>
     </header>
     <main>
-        <h2>Messages</h2>
-        <section class="message-contain">
-            <!-- We can create a border, margins, and background and put the messages in here-->
-        </section>
-        <section class="sidebar">
-        <button id="plate">Throw Plate</button><br>
-        <button id="fire">Set Fire</button>
-        </section>
-        <button id="clear">Clear</button>
-
-
+            <h2>Messages</h2>
+        <div class="row">
+                
+                <div class="col-8">
+                    <!-- <h2>Messages</h2> -->
+                    <section class="message-contain">
+                        <!-- We can create a border, margins, and background and put the messages in here-->
+                        <div class="msg">
+                            <p>I've decided to smash my computer...</p>
+                            <button>X</button>
+                        </div>
+                        <button id="clear">Clear</button>
+                    </section>
+                    
+                </div>
+                <div class="col-4">
+                    <section class="sidebar">
+                    <button id="plate">Throw Plate</button><br>
+                    <button id="fire">Set Fire</button><br>
+                    <button id="plate">Throw Plate</button><br>
+                    <button id="fire">Set Fire</button><br>
+                    <button id="plate">Throw Plate</button><br>
+                    <button id="fire">Set Fire</button><br>
+                    <button id="plate">Throw Plate</button><br>
+                    <button id="fire">Set Fire</button><br>
+                    <button id="plate">Throw Plate</button><br>
+                    <button id="fire">Set Fire</button><br>
+                    <button id="plate">Throw Plate</button><br>
+                    <button id="fire">Set Fire</button>
+                    </section>
+                </div>
+                    
+        </div>
 
 
     </main>
