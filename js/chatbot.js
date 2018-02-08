@@ -25,7 +25,7 @@ let showData = (jsonObj) => {
 
     console.log('inside showData function:', jsonObj);
 
-    let chatbox = document.getElementById('chatbox');
+    let chatbox = document.getElementById('message-contain');
 
     for(var key in jsonObj) {
         let message = '';
