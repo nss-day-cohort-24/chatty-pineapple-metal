@@ -17,8 +17,7 @@ let jsonRequest = new XMLHttpRequest();
 let dataRequestComplete = (event) => {
     console.log("The data transfer is complete, we have the data.");
     let data = JSON.parse(event.target.responseText);
-    console.log("bot messages:", data);
-    return data;
+    console.log("inside dataRequestComplete function:", data);
     showData(data);
 };
 
@@ -28,7 +27,7 @@ let showData = (jsonObj) => {
 
     let chatbox = document.getElementById('chatbox');
 
-    for(key in jsonObj) {
+    for(var key in jsonObj) {
         let message = '';
         let chatBot = jsonObj[key];
         message += '<div class="msg">';
@@ -42,7 +41,7 @@ let showData = (jsonObj) => {
 
     }
 
-}
+};
 
 function dataRequestFailed(event) {
     console.log("There was an error");
@@ -57,30 +56,9 @@ jsonRequest.addEventListener("error", dataRequestFailed);
 jsonRequest.open('GET', messageURL);
 console.log("Getting data");
 
-////Set the responseType to JSON so that XHR knowns that the server will be returning JSON and that it should be converted behind the scenes into JS
-// jsonRequest.responseType = 'json';
-// console.log("The data is an json array");
-
 ////Send the request
 jsonRequest.send();
 console.log("Sent the request");
-
-
-// let botMessages = jsonRequest.response; // stores the response to our request in a variable
-
-
-// //Output message to chatbox//
-
-// let chatbox = document.getElementById("chatbox");
-
-// let newBotMsg = document.createElement('p'); 
-// console.log("created new p element for message");
-
-// newBotMsg.textContent = botMessages.welcome;
-// console.log("set the textContent to botMessages.welcome");
-
-// chatbox.appendChild(newBotMsg);
-// console.log("append the text to the chatbox section");
 
 console.log("chatbot has loaded");
 
