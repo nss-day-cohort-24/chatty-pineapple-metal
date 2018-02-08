@@ -13,10 +13,9 @@ function enter(event) {
 }
 
 // enter press 
-document.getElementById("user-submit").addEventListener("keypress", enter);
+document.getElementById("input").addEventListener("keypress", enter);
 // on click
-document.getElementById("user-input").addEventListener("click", message);
-
+document.getElementById("user-submit").addEventListener("click", message);
 
 
 
