@@ -2,4 +2,4 @@
 
 var messages = [];
 
-module.exports = messages;
+module.exports = {messages};
