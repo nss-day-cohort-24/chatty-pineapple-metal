@@ -1,22 +1,5 @@
 "use strict";
 
-let myVar = require("./function");
 
-////////// dom stuff
-
-// on enter keypress
-function enter(event) {
-    if (event.keyCode === 13) {
-        messageSubmit();
-    } else if (event.keyCode != 13) {
-    }
-}
-
-// enter press 
-document.getElementById("input").addEventListener("keypress", enter);
-// on click
-document.getElementById("user-submit").addEventListener("click", message);
-
-
-
-
+let newVar = require("./themes");
+newVar.myFunction();
