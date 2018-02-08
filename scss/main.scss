@@ -1,25 +1,19 @@
+@import "_variables";
 @import "_dark";
+@import "_chatbox";
 
-$primaryFont: 'Montserrat', sans-serif;
-$secondaryFont:'Lato', sans-serif;
-$blue: #2c314f;
-$teal: #7acdcf;
-$white: #efeee9;
-$grey: #aaa;
-$black: #1b1d28;
-
-body{
+body {
     background-color:#7acdcf;
     padding-bottom:100px;
 
 }
 
-#logo{
+#logo {
     margin-top:-100px;
     display:inline-block;
 }
 
-form{
+form {
     display:inline-block;
     width:70%;
     text-align:right;
@@ -28,7 +22,7 @@ form{
 
 }
 
-.chex{
+.chex {
     display: inline-block;
     position: relative;
     padding-left: 35px;
@@ -154,22 +148,6 @@ header{
     float:right;
 }
 
-
-.msg{
-    margin-left:35px;
-    margin-top:75px;
-    // padding-right:400px;
-    background-color:#7acdcf;
-    text-align:center;
-    width: 400px;
-
-    position:absolute;
-    z-index:1;
-    display:inline;
-    border-radius:50px;
-    font-family: $secondaryFont;
-    
-}
 button{
     background: #2c314f;
     border-radius: 60px;

@@ -1,6 +1,7 @@
 lib/node_modules
 lib/.sass-cache
 dist
-css
+css/styles.css
+css/styles.css.map
 dummy.html
 
