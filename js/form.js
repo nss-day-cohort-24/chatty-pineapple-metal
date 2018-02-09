@@ -10,18 +10,15 @@ let messageSubmit = function(event){
 
     // place the subbmitted message in array
     let messageArray = formMessagesJS.messages.unshift(inputMessage.value);
-
-    
     // display array in the dom
     chatbox.innerHTML +=  `<div class="msg"><div class="msg-text"><p>${formMessagesJS.messages[0]}</p></div><button class="delete">delete</button></div>`;
-
+    // clearing input field
+    inputMessage.value = "";
+    // activate clear button
+    document.getElementById("clrButton").disabled = false;
     // put only 20 messages in output
     // for (let i = 0; i <= 20; i++){
     // }
- 
-    // clearing input field
-    inputMessage.value = "";
-
 };
 
 module.exports = {messageSubmit};
