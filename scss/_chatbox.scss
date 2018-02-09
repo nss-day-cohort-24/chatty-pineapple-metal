@@ -1,0 +1,26 @@
+/* Chatbox Container */
+
+.message-contain{
+    overflow-y: auto;
+    background-color:#aaa;
+    padding:10px;
+    border-radius:5px;
+//     // max-width:100%;
+//     // position: relative;  
+//     // display:inline;
+//     // text-align:left;
+//     // float:left;
+}
+
+/* Chats */
+
+.msg {
+    overflow:auto;
+    background-color:#7acdcf;
+    margin: 10px 35px 10px 10px;
+    border-radius:20px;
+    padding: 5px;
+    font-family: $secondaryFont;  
+}
+
+/* Buttons: Clear and Delete */
