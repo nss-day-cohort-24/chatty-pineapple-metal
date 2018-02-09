@@ -12,7 +12,7 @@ let messageSubmit = function(event){
     let messageArray = formMessagesJS.messages.unshift(inputMessage.value);
     
     // display array in the dom
-    chatbox.innerHTML +=  `<div class="msg"><div class="msg-text"><p>${formMessagesJS.messages[0]}</p></div><button class="delete">X</button></div>`;
+    chatbox.innerHTML +=  `<div class="msg"><div class="msg-text"><p>${formMessagesJS.messages[0]}</p></div><button class="delete">delete</button></div>`;
 
     // put only 20 messages in output
     // for (let i = 0; i <= 20; i++){
