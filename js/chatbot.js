@@ -24,18 +24,15 @@
 
     let showData = (jsonObj) => {
 
-<<<<<<< HEAD
-    let chatbox = document.getElementById('message-contain');
-=======
         console.log('inside showData function:', jsonObj);
->>>>>>> master
 
         let chatbox = document.getElementById('chatbox');
 
         for(var key in jsonObj) {
             let message = '';
             let bot = jsonObj[key];
-            message += '<div class="msg">';
+            message += '<div id="#"';
+            message += 'class="msg">';
                 // console.log(message);  
             message += '<div class="msg-text"><p>' + bot.botMessage + '</p></div>';
                 // console.log(message);
