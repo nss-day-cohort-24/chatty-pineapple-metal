@@ -1,6 +1,5 @@
 "use strict";
 let formJS = require("./form");
-let formMsg = require("./form-messages");
 
 let output = document.getElementById("chatbox");
 
@@ -100,7 +99,7 @@ document.querySelector('body').addEventListener('click', function(event) {
         let dCompInt = parseInt(dCompare);
         console.log("parsedint", dCompInt);
 
-        console.log(messages);
+
 
         
 
