@@ -26,7 +26,7 @@ document.getElementById("user-submit").addEventListener("click", formJS.messageS
 // on click give unique IDs
 document.getElementById("user-submit").addEventListener("click",funcJS.msgCount);
 // themes functionality
-// themes.myFunction();
+themes.myFunction();
 // on click, delete appropriate text bubble
 // .addEventListener("click",funcJS.deleteMsg);
 

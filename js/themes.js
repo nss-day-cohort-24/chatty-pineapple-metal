@@ -15,7 +15,7 @@ function myFunction() {
     
   function changeDarkHandler(){
 
-    // CHECKBOX ON
+    // DARK CHECKBOX ON
       if(darkCheck.checked) { 
         console.log("DARK");
         //Changes background color
@@ -63,7 +63,7 @@ function myFunction() {
           
       }
 
-      // CHECKBOX OFF
+      // DARK CHECKBOX OFF
       else {
           console.log("dark unchecked");
           let lightTheme = document.getElementById("main-back");  
@@ -90,10 +90,10 @@ function myFunction() {
             pgText[i].classList.remove("darkP");
             console.log("test");
 
-            let deleteBtn = document.getElementsByClassName("deleteDark");
-            for (let i = deleteBtn.length - 1; i >= 0; --i) {
-              deleteBtn.item(i).className = "delete";
-            }
+          let deleteBtn = document.getElementsByClassName("deleteDark");
+          for (let i = deleteBtn.length - 1; i >= 0; --i) {
+            deleteBtn.item(i).className = "delete";
+          }
 
 
 
@@ -103,16 +103,46 @@ function myFunction() {
     }
 
     function changeLargeHandler(){
+
+        // LARGE CHECKBOX ON
+
         if(largeCheck.checked) {
           console.log("LARGE");
+
+          let lgMsg = document.getElementsByClassName("msg-text");
+          console.log(lgMsg, lgMsg.length);
+          for (let i = lgMsg.length - 1; i >= 0; --i) {
+            lgMsg.item(i).className = "msg-text-lg";
+          }
+
+          let lgDel = document.getElementsByClassName("delete");
+          console.log(lgDel, lgDel.length);
+          for (let i = lgDel.length - 1; i >= 0; --i) {
+            lgDel.item(i).className = "delete-lg";
+          }
 
 
 
         }
+
+        // LARGE CHECKBOX OFF
+
         else {
             console.log("large unchecked");
 
 
+            let lgMsg = document.getElementsByClassName("msg-text-lg");
+            console.log(lgMsg, lgMsg.length);
+            for (let i = lgMsg.length - 1; i >= 0; --i) {
+              lgMsg.item(i).className = "msg-text";
+            }
+  
+
+            let lgDel = document.getElementsByClassName("delete-lg");
+            console.log(lgDel, lgDel.length);
+            for (let i = lgDel.length - 1; i >= 0; --i) {
+              lgDel.item(i).className = "delete";
+            }
 
 
         }
