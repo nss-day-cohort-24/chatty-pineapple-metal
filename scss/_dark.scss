@@ -20,16 +20,16 @@ $black: #1b1d28;
 .darkMsg{
     background-color:#2c314f;
     color:white;
-    margin-left:35px;
-    margin-top:75px;
-    text-align:center;
-    width: 400px;
-    position:absolute;
-    z-index:1;
-    display:inline;
-    border-radius:50px;
-    font-family: $secondaryFont;
+    overflow:auto;
+    margin: 10px 35px 10px 10px;
+    border-radius:20px;
+    padding: 5px;
+    font-family: $secondaryFont;  
+
+
 }
+
+
 
 .darkButton{
     background: #7acdcf;
@@ -41,5 +41,27 @@ button:hover{
     background: #2c314f;
     color:white;
     border: 2px solid #2c314f;
+    
 }
 
+.darkP {
+    color: white;
+}
+
+.deleteDark {
+    background-color: $teal;
+    font-size: 6px;
+    display: inline-block;
+    float: right;
+    margin-top: 15px;
+    margin-right: 7px;
+    border: 1px solid #2c314f;
+    width: 10px;
+    padding: 2px 12px 2px 7px;
+    text-align: center;
+}
+
+.deleteDark:hover{
+    border:1px solid #2c314f;
+    font-size:6px;
+}
