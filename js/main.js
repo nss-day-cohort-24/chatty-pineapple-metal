@@ -17,7 +17,7 @@ document.getElementById("input").addEventListener("keypress", funcJS.enter);
 // on click function
 document.getElementById("user-submit").addEventListener("click", formJS.messageSubmit);
 // on click clear
-document.getElementById("clrButton").addEventListener("click", funcJS.clear);
+document.getElementById("clrButton").addEventListener("click", funcJS.clear); 
 // delete message
 document.getElementById("user-submit").addEventListener("click",msgJS.msgCount);
 // themes functionality
