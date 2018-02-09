@@ -89,16 +89,13 @@ function myFunction() {
           for (let i = 0; i < pgText.length; i++) {
             pgText[i].classList.remove("darkP");
             console.log("test");
-
+          }
           let deleteBtn = document.getElementsByClassName("deleteDark");
           for (let i = deleteBtn.length - 1; i >= 0; --i) {
             deleteBtn.item(i).className = "delete";
           }
 
-
-
-          
-          }
+          // }
       }
     }
 
