@@ -16,79 +16,8 @@ body {
 }
 
 main {
-    margin: 10px 25px;
-}
-
-#logo {
-    margin-top:-100px;
-    display:inline-block;
-}
-
-form {
-    display:inline-block;
-    width:70%;
-    text-align:right;
-    margin-top:50px;
-    color:white;
-
-}
-
-.chex {
-    display: inline-block;
-    position: relative;
-    padding-left: 35px;
-    padding-right:10px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    font-family: $secondaryFont;
-}
-
-.chex:hover input ~ .checkmark {
-    background-color: #aaa;
-}
-
-.chex input:checked ~ .checkmark {
-    background-color: #7acdcf;
-}
-
-.chex input:checked ~ .checkmark:after {
-    display: block;
-}
-
-.chex .checkmark:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-
-.chex input{
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-}
-
-.checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #eee;
-}
-.checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
+    margin: 0px 25px 10px;
+    padding-top: 230px;
 }
 
 h1 {
@@ -127,9 +56,7 @@ p .bold {
 
 }
 
-header{
-    background-color:#2c314f;
-}
+
 
 .sidebar > button{
     text-align:center;
