@@ -6,7 +6,7 @@ let funcJS = require("./function");
 let formJS = require("./form");
 let chatbot = require("./chatbot");
 let themes = require("./themes");
-let msg = require("./msgid");
+let msg = require("./msgid"); 
 
 // dltBtn = document.getElementsByClassName("delete");
 ////////// dom stuff
@@ -19,9 +19,6 @@ document.getElementById("input").addEventListener("keypress", funcJS.enter);
 document.getElementById("user-submit").addEventListener("click", formJS.messageSubmit);
 // on click clear
 document.getElementById("clrButton").addEventListener("click", funcJS.clear);
-
-// document.getElementById("clear").addEventListener("click", funcJS.clear);
-
 // delete message
 // document.getElementById("user-submit").addEventListener("click",msgJS.msgCount);
 
