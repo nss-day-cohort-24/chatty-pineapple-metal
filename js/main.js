@@ -34,7 +34,7 @@ document.getElementById("user-submit").addEventListener("click",funcJS.msgCount)
 // themes functionality
 themes.myFunction();
 // on click, delete appropriate text bubble
-// .addEventListener("click",funcJS.deleteMsg);
+
 
 
 

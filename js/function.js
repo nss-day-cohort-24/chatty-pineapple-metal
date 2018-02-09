@@ -79,7 +79,35 @@ let deleteMsg = function(){
 
 };
 
-    
+
+
+
+document.querySelector('body').addEventListener('click', function(event) {
+    if (event.target.tagName.toLowerCase() === 'button') {
+        let bttn = event.target;
+        let bttnId = event.target.id;
+        console.log(bttn);
+        console.log(bttnId);
+        if(bttn.className === "delete" || bttn.className === "msg-text-lg" ){
+      console.log("fuckameeee");
+        let dCompare = bttnId.slice(7,10);
+        console.log(dCompare);
+        let mCompare = ("textbubble_" + dCompare);
+        console.log(mCompare);
+        let currentMsg = document.getElementById(mCompare);
+        currentMsg.innerHTML = "";
+        let dCompInt = parseInt(dCompare);
+        console.log("parsedint", dCompInt);
+
+
+
+        
+
+
+
+    }
+  }});    
+  
     
 
 module.exports = {enter, clrButton, clear, msgCount, deleteMsg};
