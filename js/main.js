@@ -23,8 +23,13 @@ document.getElementById("input").addEventListener("keypress", funcJS.enter);
 document.getElementById("user-submit").addEventListener("click", formJS.messageSubmit);
 // on click clear
 // document.getElementById("clear").addEventListener("click", funcJS.clear);
+<<<<<<< HEAD
 // on click give unique IDs
 document.getElementById("user-submit").addEventListener("click",funcJS.msgCount);
+=======
+// delete message
+// document.getElementById("user-submit").addEventListener("click",msgJS.msgCount);
+>>>>>>> master
 // themes functionality
 // themes.myFunction();
 // on click, delete appropriate text bubble

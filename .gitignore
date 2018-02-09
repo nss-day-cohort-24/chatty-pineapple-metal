@@ -4,5 +4,5 @@ dist
 css/styles.css
 css/styles.css.map
 dummy.html
-
+.DS_Store
 
