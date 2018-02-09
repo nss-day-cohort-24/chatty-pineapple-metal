@@ -28,7 +28,7 @@ document.getElementById("clrButton").addEventListener("click", funcJS.clear);
 // on click give unique IDs
 document.getElementById("user-submit").addEventListener("click",funcJS.msgCount);
 // themes functionality
-// themes.myFunction();
+themes.myFunction();
 // on click, delete appropriate text bubble
 // .addEventListener("click",funcJS.deleteMsg);
 
