@@ -28,21 +28,28 @@
 
         let chatbox = document.getElementById('chatbox');
 
+<<<<<<< HEAD
         for(var key in jsonObj) {
             let message = '';
             let bot = jsonObj[key];
+            message += '<div id="#"';
+            message += 'class="msg">';
+=======
+    
+            let message = "";
             message += '<div class="msg">';
+>>>>>>> master
                 // console.log(message);  
             message += '<div class="msg-text"><p>' + bot.botMessage + '</p></div>';
                 // console.log(message);
             message += '<button class="delete">X</button>';
                 // console.log(message);
             message += '</div>';
-                console.log(message);
+                // console.log(message);
 
             chatbox.innerHTML += message;
-                console.log(chatbox.innerHTML);
-        }
+                // console.log(chatbox.innerHTML);
+
 
     };
 

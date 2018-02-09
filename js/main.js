@@ -5,6 +5,7 @@ console.log("main js is here");
 let funcJS = require("./function");
 let formJS = require("./form");
 let chatbot = require("./chatbot");
+let themes = require("./themes");
 
 ////////// dom stuff
 
@@ -20,7 +21,8 @@ document.getElementById("input").addEventListener("keypress", funcJS.enter);
 document.getElementById("user-submit").addEventListener("click", formJS.messageSubmit);
 // on click clear
 document.getElementById("clear").addEventListener("click", funcJS.clear);
-
+// themes functionality
+themes.myFunction();
 
 
 

@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="main-back">
     <header>
         <img src="images/mayhem.png" alt="Mayhem" id="logo" width="300" height="200">
             <form>
@@ -35,18 +35,17 @@
             <h2>Messages</h2>
         <div class="row">
                 
-                <div class="col-8">
+                <div class="col-8" id="mainBtns">
                     <!-- <h2>Messages</h2> -->
                     <section id="chatbox" class="message-contain">
                         <!-- We can create a border, margins, and background and put the messages in here-->
-                        <div class="msg">
-                            <div class="msg-text">
+                        <div class="msg" id="msgId">
                             <p>I've decided to smash my computer...</p>
                             </div>
                             <button class="delete">X</button>
                         </div>
-                        <button id="clear">Clear</button>
                     </section>
+                    <button id="clear">Clear</button>
                     
                 </div>
                 <div class="col-4">
