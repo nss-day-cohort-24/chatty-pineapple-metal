@@ -8,7 +8,7 @@ let chatbot = require("./chatbot");
 let themes = require("./themes");
 let msg = require("./msgid");
 
-dltBtn = document.getElementsByClassName("delete");
+// dltBtn = document.getElementsByClassName("delete");
 ////////// dom stuff
 
 // formJS.messageSubmit();
