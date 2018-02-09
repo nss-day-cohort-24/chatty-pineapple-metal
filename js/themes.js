@@ -16,7 +16,7 @@ function myFunction() {
   function changeDarkHandler(){
 
     // CHECKBOX ON
-      if(darkCheck.checked) {
+      if(darkCheck.checked) { 
         console.log("DARK");
         //Changes background color
         let darkTheme = document.getElementById("main-back");
@@ -31,7 +31,7 @@ function myFunction() {
         }
 
 
-        // Changes button colors
+//         // Changes button colors
 
         let agroBtnContainer = document.getElementById("agroBtns");
         let darkBtn = agroBtnContainer.getElementsByTagName("button");
