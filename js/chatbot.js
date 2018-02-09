@@ -28,17 +28,11 @@
 
         let chatbox = document.getElementById('chatbox');
 
-<<<<<<< HEAD
         for(var key in jsonObj) {
             let message = '';
             let bot = jsonObj[key];
             message += '<div id="#"';
             message += 'class="msg">';
-=======
-    
-            let message = "";
-            message += '<div class="msg">';
->>>>>>> master
                 // console.log(message);  
             message += '<div class="msg-text"><p>' + bot.botMessage + '</p></div>';
                 // console.log(message);
@@ -51,8 +45,8 @@
                 // console.log(chatbox.innerHTML);
 
 
+    }
     };
-
     function dataRequestFailed(event) {
         console.log("There was an error");
     }
