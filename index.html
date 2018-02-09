@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pineapple Metal</title>
+    <title>Pineapple Metal Messaging System</title>
     <!-- google fonts -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato:700|Montserrat" rel="stylesheet">
@@ -13,56 +13,47 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
 </head>
 <body>
-    <div class="container">
-    <header>
-        <img src="images/mayhem.png" alt="Mayhem" id="logo" width="300" height="200">
-            <form>
-                <input id="input" class="form-control form-control-lg" type="text" placeholder=".This is where the input goeeeessssssssss"><br>
-                <label class="chex">
-                <input type="checkbox" name="theme" value="light" id="checkDark"> Dark Theme</input>
-                <span class="checkmark"></span>
-                </label>
-                <label class="chex">
-                <input type="checkbox" name="theme" value="large" id="checkLarge"> Large Text</input>
-                <span class="checkmark"></span>
-                </label>
+
+    <div class="container" id="main-back">
+    <header id="stickNav">
+        <!-- <div class="container"> -->
+            <img src="images/mayhem.png" alt="Mayhem" id="logo" width="300" height="200">
+                <form>
+                    <input id="input" class="form-control form-control-lg" type="text" placeholder="Type your frustrations here. We're here to support you."><br>
+                    <label class="chex">
+                    <input type="checkbox" name="theme" value="light" id="checkDark"> Dark Theme</input>
+                    <span class="checkmark"></span>
+                    </label>
+                    <label class="chex">
+                    <input type="checkbox" name="theme" value="large" id="checkLarge"> Large Text</input>
+                    <span class="checkmark"></span>
+                    </label>
 
 
-                <button id="user-submit">Click on me boiiiiii</button>
-            </form>
+
+                    <button id="user-submit">Submit your message</button>
+                </form>
+        <!-- </div>  -->
     </header>
     <main>
-            <h2>Messages</h2>
+            <h2>NSS Mayhem Chatroom</h2>
+            <p>Need to get something off your chest? Don't want to be criticized for asking "stupid" questions? Do you just need love and support from people that understand what you're going through?</p>
+            <p>You've come to the right place. The NSS Mayhem Chatroom is a place where you can feel safe to vent, groan, mutter or just scream in all caps. We're here to support you, whether that's listening to your woes or throwing plates at the wall with you. </p>
+            <p>Oh! We stress anonymity so much that we didn't even program in usernames! So go at it - let the mayhem begin!</p>
         <div class="row">
                 
                 <div class="col-8">
                     <!-- <h2>Messages</h2> -->
                     <section id="chatbox" class="message-contain">
                         <!-- We can create a border, margins, and background and put the messages in here-->
-                        <div id="textbubble_20" class="msg">
-                            <div class="msg-text">
-                            <p>I've decided to smash my computer...</p>
-                            </div>
-                            <button id="delete_20" class="delete">X</button>
-                        </div>
-                        <button id="clear">Clear</button>
+
                     </section>
                     
                 </div>
                 <div class="col-4">
                     <section class="sidebar">
-                    <button id="plate">Throw Plate</button><br>
-                    <button id="fire">Set Fire</button><br>
-                    <button id="plate">Throw Plate</button><br>
-                    <button id="fire">Set Fire</button><br>
-                    <button id="plate">Throw Plate</button><br>
-                    <button id="fire">Set Fire</button><br>
-                    <button id="plate">Throw Plate</button><br>
-                    <button id="fire">Set Fire</button><br>
-                    <button id="plate">Throw Plate</button><br>
-                    <button id="fire">Set Fire</button><br>
-                    <button id="plate">Throw Plate</button><br>
-                    <button id="fire">Set Fire</button>
+                    <button id="plate">Throw A Plate</button><br>
+                    <button id="fire">Set A Fire</button><br>
                     </section>
                 </div>
                     

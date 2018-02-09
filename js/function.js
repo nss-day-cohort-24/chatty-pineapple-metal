@@ -1,7 +1,7 @@
 "use strict";
 let formJS = require("./form");
 
-let output = document.getElementById("message-contain");
+let output = document.getElementById("chatbox");
 
 // on enter keypress
 let enter = function(event) {

@@ -7,23 +7,21 @@ let chatbox = document.getElementById("chatbox");
 let messageCount = 0;
 let messageSubmit = function(event){
     event.preventDefault();
-    console.log("form js is here");
+
     // place the subbmitted message in array
-    console.log("message array", formMessagesJS.messages);
-    
     let messageArray = formMessagesJS.messages.unshift(inputMessage.value);
 
-
-    console.log("message array", formMessagesJS.messages);
-
+    
     // display array in the dom
-    chatbox.innerHTML += `<div class="msg" id="textbubble"><div class="msg-text"<p>${formMessagesJS.messages}</p></div><button class="delete" id="delete">X</button></div>`;
-        // clearing input field
+    chatbox.innerHTML +=  `<div class="msg"><div class="msg-text"><p>${formMessagesJS.messages[0]}</p></div><button class="delete">delete</button></div>`;
+
+    // put only 20 messages in output
+    // for (let i = 0; i <= 20; i++){
+    // }
+ 
+    // clearing input field
     inputMessage.value = "";
 
-        // put only 20 messages in output
-        // for (let i = 0; i <= 20; i++){}
-        
 };
 
 module.exports = {messageSubmit};

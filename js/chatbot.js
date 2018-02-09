@@ -36,14 +36,14 @@
                 // console.log(message);  
             message += '<div class="msg-text"><p>' + bot.botMessage + '</p></div>';
                 // console.log(message);
-            message += '<button class="delete">X</button>';
+            message += '<button class="delete">delete</button>';
                 // console.log(message);
             message += '</div>';
                 // console.log(message);
 
             chatbox.innerHTML += message;
                 // console.log(chatbox.innerHTML);
-
+        }
 
     }
     };
@@ -67,4 +67,4 @@
     console.log("chatbot has loaded");
 
   
-module.exports = dataRequestComplete; 
+module.exports = {dataRequestComplete}; 
