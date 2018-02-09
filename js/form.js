@@ -12,7 +12,7 @@ let messageSubmit = function(event){
     // place the subbmitted message in array
     let messageArray = formMessagesJS.messages.unshift(inputMessage.value);
     // display array in the dom
-    chatbox.innerHTML +=  `<div class="msg"><div class="msg-text"><p>${formMessagesJS.messages[0]}</p></div><button class="delete">delete</button></div>`;
+    chatbox.innerHTML +=  `<div class="msg" id="textbubble"><div class="msg-text" ><p>${formMessagesJS.messages[0]}</p></div><button class="delete" id="delete">delete</button></div>`;
     // clearing input field
     inputMessage.value = "";
     // activate clear button
