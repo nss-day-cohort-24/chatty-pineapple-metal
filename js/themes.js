@@ -1,4 +1,4 @@
-// "use strict";
+"use strict";
 
 // function myFunction() {
 //     console.log("test");
@@ -16,7 +16,7 @@
   function changeDarkHandler(){
 
     // CHECKBOX ON
-      if(darkCheck.checked) {
+      if(darkCheck.checked) { 
         console.log("DARK");
         //Changes background color
         let darkTheme = document.getElementById("main-back");
