@@ -5,6 +5,7 @@ let formMessagesJS = require("./form-messages");
 let inputMessage = document.getElementById("input");
 let chatbox = document.getElementById("chatbox");
 let messageCount = 0;
+
 let messageSubmit = function(event){
     event.preventDefault();
 

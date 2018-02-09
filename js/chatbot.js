@@ -1,5 +1,7 @@
 "use strict";
 
+let funcJS = require("./function");
+
     console.log("chatbox js is loading");
 
     //Goal: On initial page load, load 5 messages into the chatbox.
@@ -31,18 +33,19 @@
         for(var key in jsonObj) {
             let message = '';
             let bot = jsonObj[key];
-            message += '<div id="#"';
+            message += '<div id="textbubble"';
             message += 'class="msg">';
                 // console.log(message);  
             message += '<div class="msg-text"><p>' + bot.botMessage + '</p></div>';
                 // console.log(message);
-            message += '<button class="delete">delete</button>';
+            message += '<button class="delete" id="delete">delete</button>';
                 // console.log(message);
             message += '</div>';
                 // console.log(message);
 
             chatbox.innerHTML += message;
                 // console.log(chatbox.innerHTML);
+                funcJS.msgCount();
         }
 
     };

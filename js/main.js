@@ -6,8 +6,9 @@ let funcJS = require("./function");
 let formJS = require("./form");
 let chatbot = require("./chatbot");
 let themes = require("./themes");
-let msgJS = require("./msgid");
+let msg = require("./msgid");
 
+// dltBtn = document.getElementsByClassName("delete");
 ////////// dom stuff
 
 //on page load, load chatbot
@@ -17,15 +18,19 @@ document.getElementById("input").addEventListener("keypress", funcJS.enter);
 // on click function
 document.getElementById("user-submit").addEventListener("click", formJS.messageSubmit);
 // on click clear
-<<<<<<< HEAD
 document.getElementById("clrButton").addEventListener("click", funcJS.clear);
-=======
+
 // document.getElementById("clear").addEventListener("click", funcJS.clear);
->>>>>>> ee536d1810d40cc484bcb671b92cf356ef960bcf
+
 // delete message
 // document.getElementById("user-submit").addEventListener("click",msgJS.msgCount);
+
+// on click give unique IDs
+document.getElementById("user-submit").addEventListener("click",funcJS.msgCount);
 // themes functionality
-themes.myFunction();
+// themes.myFunction();
+// on click, delete appropriate text bubble
+// .addEventListener("click",funcJS.deleteMsg);
 
 
 
