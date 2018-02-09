@@ -1,7 +1,7 @@
 "use strict";
 
 let formMessagesJS = require("./form-messages");
-const emoji = require('emoji-fire');
+
 
 let inputMessage = document.getElementById("input");
 let chatbox = document.getElementById("chatbox");
