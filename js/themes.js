@@ -44,6 +44,20 @@ function myFunction() {
         let msgHeader = document.getElementById("heading");
         msgHeader.className = "headerDark";
 
+        // Change paragraph text color
+        let pgText = document.getElementsByTagName("p");
+        for (let i = 0; i < pgText.length; i++) {
+          pgText[i].classList.add("darkP");
+          console.log("test");
+        }
+
+        // Change delete button color
+        let deleteBtn = document.getElementsByClassName("delete");
+        for (let i = deleteBtn.length - 1; i >= 0; --i) {
+          deleteBtn.item(i).className = "deleteDark";
+        }
+
+
 
         console.log("got iT?");
           
@@ -70,6 +84,21 @@ function myFunction() {
 
           let msgHeader = document.getElementById("heading");
           msgHeader.className = "headerLight";
+
+          let pgText = document.getElementsByTagName("p");
+          for (let i = 0; i < pgText.length; i++) {
+            pgText[i].classList.remove("darkP");
+            console.log("test");
+
+            let deleteBtn = document.getElementsByClassName("deleteDark");
+            for (let i = deleteBtn.length - 1; i >= 0; --i) {
+              deleteBtn.item(i).className = "delete";
+            }
+
+
+
+          
+          }
       }
     }
 
