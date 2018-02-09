@@ -1,14 +1,14 @@
 "use strict";
 
-// function myFunction() {
-//     console.log("test");
+function myFunction() {
+    console.log("test");
 
-//     let darkCheck = document.querySelector('#checkDark');
-//     let largeCheck = document.querySelector("#checkLarge");
+    let darkCheck = document.querySelector('#checkDark');
+    let largeCheck = document.querySelector("#checkLarge");
 
 
-//     darkCheck.addEventListener('change', changeDarkHandler);
-//     largeCheck.addEventListener('change', changeLargeHandler);
+    darkCheck.addEventListener('change', changeDarkHandler);
+    largeCheck.addEventListener('change', changeLargeHandler);
 
 
 
