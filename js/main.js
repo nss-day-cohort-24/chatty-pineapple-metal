@@ -6,7 +6,7 @@ let funcJS = require("./function");
 let formJS = require("./form");
 let chatbot = require("./chatbot");
 let themes = require("./themes");
-let msg = require("./msgid");
+let msg = require("./msgid"); 
 
 // dltBtn = document.getElementsByClassName("delete");
 ////////// dom stuff
