@@ -15,18 +15,15 @@ let w = "";
 
 // on enter keypress
 let enter = function(event) {
-    console.log("Heeeeeey.");
     if (event.keycode === 13) {
-        console.log("function js - enter is here");
         formJS.messageSubmit();
-        console.log("sjdhgfsdf");
     }
 };
 
 // clear messages
 let clear = function(){
-    console.log("clear is here");
     output.innerHTML = "";
+    document.getElementById("clrButton").disabled = true;
 };
 
 // disable clear button
