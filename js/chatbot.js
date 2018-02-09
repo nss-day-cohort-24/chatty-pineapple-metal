@@ -45,8 +45,8 @@
                 // console.log(chatbox.innerHTML);
         }
 
+    }
     };
-
     function dataRequestFailed(event) {
         console.log("There was an error");
     }
