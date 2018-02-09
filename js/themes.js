@@ -33,8 +33,8 @@ function myFunction() {
 
 //         // Changes button colors
 
-//         let agroBtnContainer = document.getElementById("agroBtns");
-//         let darkBtn = agroBtnContainer.getElementsByTagName("button");
+        let agroBtnContainer = document.getElementById("agroBtns");
+        let darkBtn = agroBtnContainer.getElementsByTagName("button");
 
         for (let i = 0; i < darkBtn.length; i++) { 
           darkBtn[i].classList.add("darkButton");
@@ -45,7 +45,7 @@ function myFunction() {
         msgHeader.className = "headerDark";
 
 
-//         console.log("got iT?");
+        console.log("got iT?");
           
       }
 
@@ -61,8 +61,8 @@ function myFunction() {
             darkMsg.item(i).className = "msg";
           }
 
-//           let agroBtnContainer = document.getElementById("agroBtns");
-//           let darkBtn = agroBtnContainer.getElementsByTagName("button");
+          let agroBtnContainer = document.getElementById("agroBtns");
+          let darkBtn = agroBtnContainer.getElementsByTagName("button");
   
           for (let i = 0; i < darkBtn.length; i++) { 
             darkBtn[i].classList.remove("darkButton");
@@ -73,26 +73,26 @@ function myFunction() {
       }
     }
 
-//     function changeLargeHandler(){
-//         if(largeCheck.checked) {
-//           console.log("LARGE");
+    function changeLargeHandler(){
+        if(largeCheck.checked) {
+          console.log("LARGE");
 
 
 
-//         }
-//         else {
-//             console.log("large unchecked");
+        }
+        else {
+            console.log("large unchecked");
 
 
 
 
-//         }
-//       }
+        }
+      }
 
 
-// }
+}
 
 
-// module.exports = {myFunction};
+module.exports = {myFunction};
 
 
