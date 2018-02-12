@@ -34,6 +34,9 @@ document.getElementById("user-submit").addEventListener("click",funcJS.msgCount)
 // themes functionality
 themes.myFunction();
 // on click, delete appropriate text bubble
+document.getElementById("table").addEventListener("click", funcJS.msgCount);
+// on click table flip
+document.getElementById("fire").addEventListener("click", funcJS.msgCount);
 
 
 
