@@ -1,5 +1,6 @@
 "use strict";
 let formJS = require("./form");
+let formMSG = require("./form-messages");
 
 let output = document.getElementById("chatbox");
 
@@ -36,27 +37,23 @@ let clrButton = function(){
 };
 
 let msgCount = function() {
-    console.log("plzwork");
-    console.log(num);
-    // messageNum.push(num);
-    // console.log("array", messageNum);
+
+
     if (num < 10){
         n = num.toString();
-        // n = n.toString();
-        // console.log("n:",n);
+
     
         w = "textbubble_0" + n;
         d = "delete_0" + n;  
     }
     else{
     n = num.toString();
-    // n = n.toString();
-    // console.log("n:",n);
+
 
     w = "textbubble_" + n;
     d = "delete_" + n;
     }
-    // console.log("num",num);
+
     
     console.log("id",n);
     
@@ -71,33 +68,37 @@ let msgCount = function() {
     
     
 
-let deleteMsg = function(){
-    
-    // msg.innerHTML = "";
-    console.log("suck it JS");
 
-
-};
 
 
 
 
 document.querySelector('body').addEventListener('click', function(event) {
     if (event.target.tagName.toLowerCase() === 'button') {
+
         let bttn = event.target;
         let bttnId = event.target.id;
-        console.log(bttn);
-        console.log(bttnId);
-        if(bttn.className === "delete" || bttn.className === "msg-text-lg" ){
-      console.log("fuckameeee");
+
+        if(bttn.className === "delete" || bttn.className === "deleteDark" || bttn.className === "delete-lg" ){
         let dCompare = bttnId.slice(7,10);
-        console.log(dCompare);
+
         let mCompare = ("textbubble_" + dCompare);
-        console.log(mCompare);
+
         let currentMsg = document.getElementById(mCompare);
+        let msgContents =  document.getElementById(mCompare).childNodes[0].childNodes[0].innerHTML;
+
         currentMsg.innerHTML = "";
-        let dCompInt = parseInt(dCompare);
-        console.log("parsedint", dCompInt);
+
+        let msgArray = formMSG.messages;
+
+        let m = msgArray.indexOf(msgContents);
+
+        formMSG.messages.splice(m, 1);
+        document.getElementById(mCompare).removeAttribute("class");
+
+        
+
+
 
 
 
@@ -110,4 +111,4 @@ document.querySelector('body').addEventListener('click', function(event) {
   
     
 
-module.exports = {enter, clrButton, clear, msgCount, deleteMsg};
+module.exports = {enter, clrButton, clear, msgCount};
