@@ -72,21 +72,20 @@ p .bold {
     font-family: $secondaryFont;
 }
 .delete{
-    font-size:6px;
+    font-size:12px;
     display:inline-block;
     float:right;
     margin-top:15px;
     margin-right:7px;
     border:1px solid #2c314f;
-    width:10px;
-    padding:2px 12px 2px 7px;
+    padding:2px 7px;
     text-align:center;
 
 }
 
 .delete:hover{
     border:1px solid #2c314f;
-    font-size:6px;
+    font-size:12px;
 }
 
 #user-submit{
